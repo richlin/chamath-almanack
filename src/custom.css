@@ -1,54 +1,94 @@
-/* Clean book typography */
+/* Naval Almanack-inspired typography */
+
+/* Import clean serif + sans-serif pairing */
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=Inter:wght@400;600;700&display=swap');
+
 :root {
-    --content-max-width: 720px;
+    --content-max-width: 620px;
 }
 
+/* Body text: large, serif, generous spacing — matches Naval Almanack */
 .content main {
-    font-size: 1.05rem;
-    line-height: 1.8;
+    font-family: 'Lora', Georgia, serif;
+    font-size: 1.15rem;
+    line-height: 1.7;
+    color: #333;
 }
 
-/* Style blockquotes as Chamath's voice */
+/* Headings: clean sans-serif like futura-pt */
+.content main h1 {
+    font-family: 'Inter', -apple-system, sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    margin-bottom: 0.5em;
+}
+
+.content main h2 {
+    font-family: 'Inter', -apple-system, sans-serif;
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-top: 2em;
+}
+
+.content main h3 {
+    font-family: 'Inter', -apple-system, sans-serif;
+    font-size: 1.15rem;
+    font-weight: 600;
+}
+
+/* Blockquotes: Chamath's voice — italic, subtle left border */
 blockquote {
-    border-left: 3px solid #333;
-    padding: 0.5em 1.5em;
+    border-left: 1px solid #ddd;
+    padding: 0.3em 1.5em;
     margin: 1.5em 0;
-    font-style: normal;
-    background: rgba(0, 0, 0, 0.02);
-    border-radius: 0 4px 4px 0;
+    font-style: italic;
+    background: none;
 }
 
 .navy blockquote,
 .coal blockquote,
 .ayu blockquote {
-    border-left-color: #aaa;
-    background: rgba(255, 255, 255, 0.03);
+    border-left-color: #555;
 }
 
 blockquote p {
-    margin: 0.5em 0;
+    margin: 0.6em 0;
 }
 
 /* Chapter subtitle styling */
 .content main > p:first-of-type em {
-    font-size: 1.1rem;
-    color: #666;
+    font-family: 'Inter', -apple-system, sans-serif;
+    font-size: 1rem;
+    color: #888;
     display: block;
-    margin-bottom: 1em;
+    margin-bottom: 1.5em;
+    font-style: italic;
 }
 
-/* Horizontal rules as section breaks */
+/* Editorial text (non-blockquote paragraphs) stays roman */
+.content main > p {
+    font-style: normal;
+}
+
+/* Horizontal rules as clean section breaks */
 hr {
     border: none;
-    border-top: 1px solid #ddd;
-    margin: 2em 0;
+    border-top: 1px solid #e0e0e0;
+    margin: 2.5em 0;
 }
 
 /* Part headers in sidebar */
 .chapter li.part-title {
+    font-family: 'Inter', -apple-system, sans-serif;
     font-weight: 700;
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     text-transform: uppercase;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.06em;
     margin-top: 1.5em;
+}
+
+/* Sidebar styling */
+.sidebar .chapter a {
+    font-size: 0.95rem;
 }
