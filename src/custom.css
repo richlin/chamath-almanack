@@ -1,0 +1,54 @@
+/* Clean book typography */
+:root {
+    --content-max-width: 720px;
+}
+
+.content main {
+    font-size: 1.05rem;
+    line-height: 1.8;
+}
+
+/* Style blockquotes as Chamath's voice */
+blockquote {
+    border-left: 3px solid #333;
+    padding: 0.5em 1.5em;
+    margin: 1.5em 0;
+    font-style: normal;
+    background: rgba(0, 0, 0, 0.02);
+    border-radius: 0 4px 4px 0;
+}
+
+.navy blockquote,
+.coal blockquote,
+.ayu blockquote {
+    border-left-color: #aaa;
+    background: rgba(255, 255, 255, 0.03);
+}
+
+blockquote p {
+    margin: 0.5em 0;
+}
+
+/* Chapter subtitle styling */
+.content main > p:first-of-type em {
+    font-size: 1.1rem;
+    color: #666;
+    display: block;
+    margin-bottom: 1em;
+}
+
+/* Horizontal rules as section breaks */
+hr {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 2em 0;
+}
+
+/* Part headers in sidebar */
+.chapter li.part-title {
+    font-weight: 700;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-top: 1.5em;
+}

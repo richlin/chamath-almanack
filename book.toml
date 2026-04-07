@@ -1,0 +1,15 @@
+[book]
+title = "The Chamath Almanack"
+authors = ["Chamath Palihapitiya"]
+description = "Ideas from Chamath Palihapitiya, in his own words."
+src = "src"
+language = "en"
+
+[build]
+build-dir = "book"
+
+[output.html]
+default-theme = "light"
+preferred-dark-theme = "navy"
+git-repository-url = "https://github.com/richlin/chamath-almanack"
+additional-css = ["src/custom.css"]
