@@ -67,15 +67,8 @@ blockquote p {
     margin-bottom: 25.5px;
 }
 
-/* Chapter subtitle: a paragraph that is ONLY an <em> element */
-.content main > p:first-of-type > em:only-child {
-    font-family: 'Inter', -apple-system, sans-serif;
-    font-size: 15px;
-    color: #a8a8a8;
-    display: block;
-    margin-bottom: 1.5em;
-    font-style: italic;
-}
+/* Chapter subtitle: styled via <h2> rendered from ## in markdown */
+/* Subtitles are now handled by the h2 rule above */
 
 /* Editorial text stays roman */
 .content main > p {
