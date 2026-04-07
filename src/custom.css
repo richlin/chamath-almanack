@@ -89,22 +89,32 @@ hr {
     margin: 2.5em 0;
 }
 
+/* Force white background in light theme */
+.light {
+    --bg: #fff;
+    --sidebar-bg: #fafafa;
+}
+
 /* Part headers in sidebar — uppercase, tight */
 .chapter li.part-title {
     font-family: 'Inter', -apple-system, sans-serif;
     font-weight: 700;
-    font-size: 0.85rem;
+    font-size: 1.05rem;
     text-transform: uppercase;
     letter-spacing: 0.06em;
     margin-top: 1.5em;
 }
 
-/* Sidebar link sizing */
+/* Sidebar chapter links — larger, readable */
 .sidebar .chapter a {
-    font-size: 0.95rem;
+    font-family: 'Inter', -apple-system, sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.6;
 }
 
-/* Site title color */
+/* Site title */
 .menu-title {
+    font-family: 'Inter', -apple-system, sans-serif;
+    font-size: 1.2rem;
     color: #787878 !important;
 }
